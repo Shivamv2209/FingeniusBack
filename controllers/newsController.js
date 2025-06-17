@@ -6,7 +6,7 @@ export const getnews = async (req, res) => {
         const response = await axios.get('https://finnhub.io/api/v1/news',{
             params:{
                 category: 'general',
-                token: process.env.FINNHUB_API_KEY
+                token: process.env.FINNHUB_API_KEY,
             }
         })
 
